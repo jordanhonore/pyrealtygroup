@@ -1,59 +1,76 @@
-# PyRealty
+# PY Realty Group Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+A modern real estate website built with Angular, featuring server-side rendering (SSR) for improved performance and SEO.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Modern, responsive design
+- Server-side rendering (SSR)
+- Property search functionality
+- Property listings with detailed views
+- Agent directory
+- Market insights section
 
+## Technologies Used
+
+- Angular 19
+- TypeScript
+- SCSS
+- Node.js
+- Express.js
+- Angular Material
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm (v9 or higher)
+
+### Installation
+
+1. Clone the repository:
 ```bash
-ng serve
+git clone https://github.com/jordanhonore/pyrealtygroup.git
+cd pyrealtygroup
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+2. Install dependencies:
 ```bash
-ng generate component component-name
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+3. Start the development server:
 ```bash
-ng generate --help
+npm run dev
 ```
 
-## Building
-
-To build the project run:
-
+4. Build for production:
 ```bash
-ng build
+npm run build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+5. Start the production server:
 ```bash
-ng test
+npm run serve:ssr:py-realty
 ```
 
-## Running end-to-end tests
+## Development
 
-For end-to-end (e2e) testing, run:
+- `npm run dev` - Start the development server
+- `npm run build` - Build the application for production
+- `npm run serve:ssr:py-realty` - Start the SSR production server
+- `npm run test` - Run unit tests
+- `npm run lint` - Run linting
 
-```bash
-ng e2e
-```
+## Contributing
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Additional Resources
+## License
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is licensed under the MIT License - see the LICENSE file for details.
