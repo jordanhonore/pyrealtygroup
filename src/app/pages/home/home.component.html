@@ -1,0 +1,46 @@
+<div class="hero-section">
+  <div class="hero-content">
+    <h1>Find Your Next Commercial Property Investment</h1>
+    <div class="search-container">
+      <mat-form-field appearance="outline" class="search-field">
+        <input matInput placeholder="Search by location, property type, or keyword">
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+      <button mat-raised-button color="primary" class="search-button">
+        Search Properties
+      </button>
+    </div>
+
+    <div class="property-types">
+      <div class="type-card" *ngFor="let type of propertyTypes">
+        <mat-icon>{{type.icon}}</mat-icon>
+        <span>{{type.name}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="featured-properties">
+  <h2>Featured Listings</h2>
+  <div class="property-grid">
+    <app-property-card *ngFor="let i of [1,2,3,4]"></app-property-card>
+  </div>
+</section>
+
+<section class="market-stats">
+  <h2>Market Intelligence</h2>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>$50B+</h3>
+      <p>Total Property Value</p>
+    </div>
+    <div class="stat-card">
+      <h3>15,000+</h3>
+      <p>Active Listings</p>
+    </div>
+    <div class="stat-card">
+      <h3>500K+</h3>
+      <p>Registered Users</p>
+    </div>
+  </div>
+</section> 
